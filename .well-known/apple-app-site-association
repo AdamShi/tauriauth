@@ -1,0 +1,14 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "com.saax.development.sunbit1",
+                "paths": [
+                    "/oauth/*",
+                    "/app/*"
+                ]
+            }
+        ]
+    }
+}

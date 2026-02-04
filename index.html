@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2 id="status">登录成功,正在返回 App...</h2>
+    <a href="javascript:void(0)" id="manualBtn"
+        style="padding: 20px; display: none; background: #007bff; color: white; text-align: center;">手动点击返回</a>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        if (code) {
+            // 构造自定义 Scheme 链接
+            const appSchemeUrl = "sunxauth://callback?code=" + encodeURIComponent(code);
+            console.log("正在通过自定义协议强力回跳...");
+            window.location.replace(appSchemeUrl);
+
+            // 保底：如果自动跳没触发，显示一个按钮
+            setTimeout(() => {
+                const btn = document.createElement('button');
+                btn.innerText = "手动返回 App";
+                btn.onclick = () => { window.location.href = appSchemeUrl; };
+                document.body.appendChild(btn);
+            }, 500);
+
+
+            // ===== 可选：自动跳 App（Universal Link + fallback）=====
+            // const qs = window.location.search
+            // window.location.href = "https://<username>.github.io/oauth-debug/app/oauth" + qs
+            // setTimeout(() => {
+            //   window.location.href = "myapp://oauth" + qs
+            // }, 800)
+        }
+    </script>
+</body>
+
+</html>
