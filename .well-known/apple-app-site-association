@@ -4,23 +4,23 @@
         "details": [
             {
                 "appID": "R3S4K5GQCK.com.saax.development.sunbit1",
-                "paths": ["*"]
+                "paths": ["/auth/callback/*"]
             },
             {
                 "appID": "R3S4K5GQCK.com.saax.development.sunbit1",
-                "paths": ["*"]
+                "paths": ["/auth/callback/*"]
             },
             {
                 "appID": "R3S4K5GQCK.com.saax.development.sunbit",
-                "paths": ["*"]
+                "paths": ["/auth/callback/*"]
             },
             {
                 "appID": "R3S4K5GQCK.com.saax.distribution.sunbit",
-                "paths": ["*"]
+                "paths": ["/auth/callback/*"]
             },
             {
                 "appID": "R3S4K5GQCK.com.saax.distribution.sunbit",
-                "paths": ["*"]
+                "paths": ["/auth/callback/*"]
             }
         ]
     }
