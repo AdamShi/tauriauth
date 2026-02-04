@@ -3,11 +3,24 @@
         "apps": [],
         "details": [
             {
-                "appID": "com.saax.development.sunbit1",
-                "paths": [
-                    "/oauth/*",
-                    "/app/*"
-                ]
+                "appID": "R3S4K5GQCK.com.saax.development.sunbit1",
+                "paths": ["*"]
+            },
+            {
+                "appID": "R3S4K5GQCK.com.saax.development.sunbit1",
+                "paths": ["*"]
+            },
+            {
+                "appID": "R3S4K5GQCK.com.saax.development.sunbit",
+                "paths": ["*"]
+            },
+            {
+                "appID": "R3S4K5GQCK.com.saax.distribution.sunbit",
+                "paths": ["*"]
+            },
+            {
+                "appID": "R3S4K5GQCK.com.saax.distribution.sunbit",
+                "paths": ["*"]
             }
         ]
     }
